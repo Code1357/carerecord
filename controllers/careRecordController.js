@@ -28,13 +28,13 @@ module.exports = {
         .not().isEmpty().withMessage('入所日は、必ず入力してください');
       req.check('user_name')
         .not().isEmpty().withMessage('利用者名は、必ず入力してください');
-      req.check('genders_gender_id', '性別は1か2の半角数字で入力してください')
+      req.check('genders_gender_id', '性別は1~2の半角数字で入力してください')
         .isInt()
         .isLength({
           min: 1,
           max: 1
         });
-      req.check('adls_adl_id', 'ADLは1〜3の半角数字で入力してください')
+      req.check('adls_adl_id', 'ADLは1~3の半角数字で入力してください')
         .isInt()
         .isLength({
           min: 1,
