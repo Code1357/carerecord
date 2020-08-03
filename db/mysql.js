@@ -13,9 +13,9 @@ const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
   host: 'us-cdbr-east-02.cleardb.com',
-  user: 'b0e681e5863f2a',
-  password: '04233a2e',
-  database: 'heroku_6cf0992d51a3999'
+  user: 'bd939ba228f033',
+  password: '080caeba',
+  database: 'heroku_74e32341ebb4691'
 });
 
 module.exports = connection;
