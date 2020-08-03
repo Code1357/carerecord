@@ -12,10 +12,10 @@ const mysql = require('mysql2');
 }); */
 
 const connection = mysql.createConnection({
-  host: 'us-cdbr-east-02.cleardb.com',
-  user: 'bd939ba228f033',
-  password: '080caeba',
-  database: 'heroku_74e32341ebb4691'
+  host: 'aws-care-record.cdfd2h0z0eyb.ap-northeast-1.rds.amazonaws.com',
+  user: 'choko',
+  password: 'choko777',
+  database: 'care_record'
 });
 
 module.exports = connection;
