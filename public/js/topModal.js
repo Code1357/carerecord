@@ -1,8 +1,8 @@
 'use strict';
 {
   const openProfile = document.getElementById('open_modal1');
-  const closeProfile = document.getElementById('close');
-  const modalProfile = document.getElementById('modal');
+  const closeProfile = document.getElementById('close1');
+  const modalProfile = document.getElementById('modal1');
   const mask = document.getElementById('mask');
   openProfile.addEventListener('click', function () {
     modalProfile.classList.remove('hidden');

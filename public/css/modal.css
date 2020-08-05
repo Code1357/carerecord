@@ -14,7 +14,7 @@ body {
   z-index: 1;
 }
 
-#modal, #modal2, #modal3 {
+#modal {
   background: #fff;
   color: #555;
   width: 300px;
@@ -28,7 +28,21 @@ body {
   z-index: 2;
 }
 
-#modal p, #modal2 p, #modal3 p {
+#modal1, #modal2, #modal3 {
+  background: rgb(247, 255, 236);
+  color: #555;
+  width: 550px;
+  padding: 40px;
+  border-radius: 8px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#modal p, #modal1 p, #modal2 p, #modal3 p {
   margin: 0 0 20px;
 }
 
@@ -36,8 +50,8 @@ body {
   display: none;
 }
 
-#modal.hidden, #modal2.hidden, #modal3.hidden {
-  transform: translate(0, -600px);
+#modal.hidden, #modal1.hidden, #modal2.hidden, #modal3.hidden {
+  transform: translate(0, -3000px);
 }
 .output {
 text-align: left;
@@ -45,4 +59,48 @@ padding-left: 55px;
 }
 #recMessage {
   color: lightcoral;
+}
+table{
+  margin-left: 20px;
+}
+
+#close1{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+font-size: 40px;
+color: lightslategray;
+margin-left: 0px;
+}
+
+.profile_table, .profile_tr{
+  display: inline-block;
+width: 270px;
+vertical-align : top;
+}
+
+.face_photo{
+  text-align: center;
+}
+.activity_history{
+  width: 400px;
+  height: 290px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  color: dimgrey;
+  overflow: scroll;
+  border: 1px solid;
+  border-color: lightslategrey;
+  background-color: rgb(250, 248, 232);
+}
+.output{
+margin: auto;
 }

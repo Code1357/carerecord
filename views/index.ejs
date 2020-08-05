@@ -1,67 +1,198 @@
 <head>
-    <link href="/css/layout.css" rel="stylesheet">
-    <link href="/css/modal.css" rel="stylesheet">
+  <link href="/css/layout.css" rel="stylesheet">
+  <link href="/css/modal.css" rel="stylesheet">
 </head>
 
 <div class="top_menu">
-<ul class="top_menu_ul">
+  <ul class="top_menu_ul">
     <li class="top_menu_li li1" id="open_modal1">Profile /</li>
     <li class="top_menu_li li2" id="open_modal2">要件 /</li>
     <li class="top_menu_li li3" id="open_modal3">ER図 /</li>
-    <li ><a class="top_menu_li li4" href="https://xd.adobe.com/view/c322e6c6-57bb-440b-a29c-62bfbdcd169e-9671/?fullscreen">DesignCamp</a></li>
-</ul>
+    <li><a class="top_menu_li li4"
+        href="https://xd.adobe.com/view/c322e6c6-57bb-440b-a29c-62bfbdcd169e-9671/?fullscreen">DesignCamp</a></li>
+  </ul>
 </div>
 
 
 <div class="top_index">
-    <a class="start" href="/managers/login">Web Care システム (⇦ クリック)</a>
+  <a class="start" href="/managers/login">Web Care システム (⇦ クリック)</a>
 </div>
 
 <%# homeController.jsから記述 %>
 <div class="greeting">
-    <h1 class="greeting_title"><%- title %> </h1>
-    <p class="greeting_sub"><%- sub %> </p>
-    <p class="greeting_Annotation"><%- Annotation %><br><span class="greeting_Annotation_sub2" > スマホ/タブレット対応</span><br><span class="greeting_Annotation_sub">【非推奨】 <br>Internet Explorer<br>
-    Mac上のSafari<br>
-     入力時のカレンダー等が表示されません</span></p>
+  <h1 class="greeting_title"><%- title %> </h1>
+  <p class="greeting_sub"><%- sub %> </p>
+  <p class="greeting_Annotation"><%- Annotation %><br><span class="greeting_Annotation_sub2">
+      スマホ/タブレット対応</span><br><span class="greeting_Annotation_sub">【非推奨】 <br>Internet Explorer<br>
+      Mac上のSafari<br>
+       入力時のカレンダー等が表示されません</span></p>
 </div>
 
 <div id="mask" class="hidden"></div>
 
-<section id="modal" class="hidden">
-<div class="output">
-<h2>Profile</h2>
-<!-- 顔画像差込 -->
-<div class="plofile">
-<ul>
-<li> 住まい：大阪府大阪狭山市</li>
-<li> 本名：岡田　康弘</li>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+<section id="modal1" class="hidden">
+  <button id="close1" class="modal_btn">×</button>
+  <div class="output">
 
+   <div class="profile">
+    <h2>Profile</h2>
+      <table class="profile_table">
+        <tr class="profile_tr">
+          <td>・Locaition：Osaka Sayama City　</td>
+        </tr>
+        <tr class="profile_tr">
+          <td>・Name：Yasuhiro Okada</td>
+        </tr>
+      </table>
+    
+        <img src="/images/fecephoto.png" alt="Face Photo" width="170px" height="120px" >
+     
+    </div>
 
-</div>
-</div>
-<button id="close" class="modal_btn">閉じる</button>
+    <div>
+      <br><h2>Development environment</h2>
+      <table>
+        <tr>
+          <td>・iMac/maCOS Catalina ver.10.15.5</td>
+        </tr>
+        <tr>
+          <td>・GitHub/https://github.com</td>
+        </tr>
+        <tr>
+          <td>・Adobe XD</td>
+        </tr>
+        <tr>
+          <td>・VSCode/iTerm2</td>
+        </tr>
+        <tr>
+          <td>・JavaScript/Node.js</td>
+        </tr>
+        <tr>
+          <td>・HTML/CSS</td>
+        </tr>
+        <tr>
+          <td>・AWS/RDS/MySQL</td>
+        </tr>
+        <tr>
+          <td>・GCP/GAE</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="activity">
+      <br><h2>Activity history</h2>
+      <p class="activity_history">
+        過去の仕事経験より「自身で開発したい！」と関心を抱くも、日常が多忙でプログラミング等の学習に着手できず時間だけが経過...<br><br>
+        3月中旬：前職を退職。<br><br>
+        3月下旬：転職活動を機にプログラミングの独学を開始。しかし、未経験で業界に通ずる知り合いもおらず。手探り状態で始める。手元にMacを所持していた事から、Playgrounds(アプリ)とネット検索によりSwiftの基礎を1ヶ月程学習。同時期、Twitterを通じてJavaScriptの学習を薦められWebアプリ開発の学習にシフトする。<br><br>
+        6月中旬：公共職業訓練(ICT科)への参加を予定するも、コロナウィルスの影響で中止となり断念。
+        同時期、コロナウィルスの影響によりオンライン学習N予備校が無料開放され、N予備校を元に学習開始。一方、開発の流れについてイメージが掴めず、一冊の書籍を購入し、体系的な学習にも勤しむ。<br><br>
+        ・7月上旬：書籍の活用を終え、自身でのWebアプリ開発に挑む。<br><br>
+        ・8月上旬：人生初のWebアプリの公開まで漕ぎ着け、今日に至る。<br><br>
+      </p>
+      </div>
+
+      <div class="resource">
+      <h2>Resource</h2>
+        <table>
+          <tr>
+            <td>・Twitter</td>
+          </tr>
+          <tr>
+            <td>・ネット検索</td>
+          </tr>
+          <tr>
+          </table>
+
+            <br><h4>- 書籍 -</h4>
+            <table>
+            <td>・入門Node.jsプログラミング</td>
+          </tr>
+          <tr>
+            <td>・JavaScriptコードレシピ集</td>
+          </tr>
+          <tr>
+            <td>・React.js ＆ Next.js</td>
+          </tr>
+          </table>
+
+          <br><h4>- 関わってきた開発環境etc -</h4>
+          <table>
+           <tr>
+            <td>・PowerShell</td>
+          </tr>
+          <tr>
+            <td>・Xcode</td>
+          </tr>
+          <tr>
+            <td>・jQuery</td>
+          </tr>
+          <tr>
+            <td>・Linux(Ubuntu)</td>
+          </tr>
+          <tr>
+            <td>・Markdown</td>
+          </tr>
+          <tr>
+            <td>・vim</td>
+          </tr>
+          <tr>
+            <td>・shell</td>
+          </tr>
+          <tr>
+            <td>・Swift</td>
+          </tr>
+          <tr>
+            <td>・MongoDB</td>
+          </tr>
+          <tr>
+            <td>・React</td>
+          </tr>
+          </div>
+          </table>
+
+          <div class="skill">
+          <br><h2>Target/skill up</h2>
+        <table>
+          <tr>
+            <td>JavaScript/Node.js</td>
+          </tr>
+          <tr>
+            <td>React/Next.js</td>
+          </tr>
+          <tr>
+            <td>ReactNative</td>
+          </tr>
+          <tr>
+            <td>DB関連</td>
+          </tr>
+          <tr>
+            <td>インフラ関連</td>
+          </tr>
+           <tr>
+            <td>業務で必要となるも</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
 </section>
 
 <section id="modal2" class="hidden">
-<div class="output">
-<p>い</p>
-</div>
-<button id="close2" class="modal_btn">閉じる</button>
+  <div class="output">
+    <p>い</p>
+  </div>
+  <button id="close2" class="modal_btn">閉じる</button>
 </section>
 
 <section id="modal3" class="hidden">
-<div class="output">
-<p>う</p>
-</div>
-<button id="close3" class="modal_btn">閉じる</button>
+  <div class="output">
+    <p>う</p>
+  </div>
+  <button id="close3" class="modal_btn">閉じる</button>
 </section>
 
 
 <script src="/js/topModal.js"></script>
 
- <!-- <a href="#"><img src="/images/er.png" alt="ER図"></a> -->
+<!-- <a href="#"><img src="/images/er.png" alt="ER図"></a> -->
