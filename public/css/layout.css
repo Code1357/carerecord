@@ -34,15 +34,44 @@ label {
   width: 100%;
   display: inline-block;
   text-align: center;
-  margin-top: 170px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.greeting_Annotation{
+  color: darkgreen;
+  margin-top: 70px;
+}
+.greeting_Annotation_sub {
+color: midnightblue;
+font-size: 12px;
+}
+.greeting_Annotation_sub2{
+  font-size: 12px;
+}
+.top_menu_ul{
+  display: flex;
+  margin-left: 15px;
+}
+.li1, .li4{
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+}
+.li2, .li3{
+  display: inline-block;
+  width: 48px;
+  text-align: center;
+}
+
 /* -------- リンク処理 */
+.top_menu_li,
 .start {
   text-decoration: none;
   color: teal;
 }
+.top_menu_li:hover,
 .start:hover {
   color: darkkhaki;
 }
@@ -51,7 +80,7 @@ label {
   color: orchid;
 }
 .greeting_title {
-  font-size: 35px;
+  font-size: 30px;
 }
 .start,
 .greeting_sub {
@@ -630,10 +659,17 @@ label {
   width: 100%;
   display: inline-block;
   text-align: center;
-  margin-top: 170px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
 }
+.li1, .li2, .li3,.li4{
+  float: left;
+  font-size: 11px;
+}
+
+
+
 /* -------- リンク処理 */
 .start {
   text-decoration: none;
