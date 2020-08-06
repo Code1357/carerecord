@@ -11,11 +11,14 @@
     <li><a class="top_menu_li li4"
         href="https://xd.adobe.com/view/c322e6c6-57bb-440b-a29c-62bfbdcd169e-9671/?fullscreen">DesignCamp</a></li>
   </ul>
+  <div>
+  <p class="top_menu_sub">DesignCampは、Adobe XDの外部ページに移動します。<br>
+  タブレットやスマホを使用した場合、横画面での閲覧を推奨いたします。</p>
+</div>
 </div>
 
-
 <div class="top_index">
-  <a class="start" href="/managers/login">Web Care システム (⇦ クリック)</a>
+  <a class="start" href="/managers/login">Web Care システム (⇦ Login入り口)</a>
 </div>
 
 <%# homeController.jsから記述 %>
@@ -36,10 +39,10 @@
   <div class="output">
 
     <div class="profile">
-      <h2>Profile</h2>
+      <h2 class="big_title">Profile</h2>
       <table class="profile_table">
         <tr class="profile_tr">
-          <td>・Locaition：Osaka Sayama City　</td>
+          <td>・Locaition：Osaka Sayama City</td>
         </tr>
         <tr class="profile_tr">
           <td>・Name：Yasuhiro Okada</td>
@@ -48,24 +51,27 @@
           <td>・BirthDay：1980/12/11</td>
         </tr>
       </table>
-
-      <img src="/images/fecephoto.png" alt="Face Photo" width="170px">
-
+    </div>
+    <div class="fece_photo">
+      <img src="/images/fecephoto.png" alt="Face Photo" class="face_photo_item">
     </div>
 
     <br>
-    <div>
+    <div class="Development_environment">
       <p class="border"></p>
     </div>
 
     <div>
-      <h2>Development environment</h2>
+      <h2 class="big_title">Development environment</h2>
       <table>
         <tr>
           <td>・iMac/maCOS Catalina ver.10.15.5</td>
         </tr>
         <tr>
-          <td>・GitHub/https://github.com</td>
+          <td>・GitHub(積み上げ)<br><a href="https://github.com/Code1357" class="github">https://github.com/Code1357</a></td>
+        </tr>
+        <tr>
+          <td>・GitHub(ポートフォリオ)<br><a href="https://github.com/Code1357/carerecord" class="github">https://github.com/Code1357/carerecord</a></td>
         </tr>
         <tr>
           <td>・Adobe XD</td>
@@ -94,7 +100,7 @@
     </div>
 
     <div class="activity">
-      <h2>Activity history</h2>
+      <h2 class="big_title">Activity history</h2>
       <p class="activity_history">
          過去の仕事経験より「自身で開発したい！」と関心を抱くも、日常が多忙でプログラミング等の学習に着手できず時間だけが経過...<br><br>
         3月中旬：前職を退職。<br><br>
@@ -112,7 +118,7 @@
     </div>
 
     <div class="resource">
-      <h2>Resource</h2>
+      <h2 class="big_title">Resource</h2>
       <table>
         <tr>
           <td>・Twitter</td>
@@ -184,7 +190,7 @@
     </div>
 
     <div class="skill">
-      <h2>Target/skill up</h2>
+      <h2 class="big_title">Target/skill up</h2>
       <table>
         <tr>
           <td>・JavaScript/Node.js</td>
@@ -208,16 +214,17 @@
     </div>
 
   </div>
+  <div>
+    <p class="last_massage">ここまで読んでくださった皆様<br>ありがとうございました</p>
+  </div>
 </section>
-
-
 
 <section id="modal2" class="hidden">
   <button id="close2" class="modal_btn close_fixed">×</button>
   <p class="close_btn">close</p>
   <div class="output">
     <div class="requirements">
-      <h2 class="requirements_image">Webアプリ開発の想定要件</h2>
+      <h2 class="requirements_image big_title">Webアプリ開発の想定要件</h2>
       <div>
         <p class="border"></p>
       </div>
@@ -291,6 +298,25 @@
         ○ ICT導入を宣伝としての広告効果<br>
       </p><br>
 
+      <div>
+        <p class="border"></p>
+      </div>
+
+      <h3>-あとがき-</h3><br>
+      <h4 class="requirements_item_title">開発にあたり</h4>
+      <p class="requirements_item">
+         昔から介護現場は人手不足と言われています。しかし、被介護者の生活を支える重要な役割を
+        果さなければなりません。人の生活を支えなければならない状況の最中、専門スタッフが時間に追われ
+        適切な介護サービスを提供できない現状は未だにあります。<br>
+        例えば、通所介護の送迎の帰り道、添乗している専門スタッフはただ車に揺られてます。タブレットや
+        スマホを通じて貴重な時間を無駄にせず、制度やセキュリティ上のコンプライアンスを遵守し記録する事ができれば、どれだけの雑務時間が削減できるでしょうか。<br>
+        上記のイメージや、今回の要件想定(ニーズ)は一例となりますが、開発を通じて、様々な場面で「地球上の誰かの生活が豊になり、その一助になる事ができればな」という想いで、エンジニアを目指す事を心に決めました。
+      </p><br>
+
+      </p>
+    </div>
+    <div>
+      <p class="last_massage">ここまで読んでくださった皆様<br>ありがとうございました</p>
     </div>
 </section>
 
@@ -298,18 +324,20 @@
   <button id="close3" class="modal_btn close_fixed">×</button>
   <p class="close_btn">close</p>
   <div class="output">
-   <div class="er">
-      <h2 class="er_image">ER 想定図</h2>
-    <div>
+    <div class="er">
+      <h2 class="er_image big_title">ER 想定図</h2>
+      <div>
         <p class="border"></p>
         <p class="er_explanation"> 画像をクリックすると大きな画像で確認できます。ブラウザの戻るボタンで戻れます。</p>
       </div>
       <div>
-      <a href="/images/er.png"><img class="er_images" src="/images/er.png" alt="ER図" width="500px" ></a>
+        <a href="/images/er.png"><img class="er_images" src="/images/er.png" alt="ER図"></a>
       </div>
-   </div>
+    </div>
+  </div>
+  <div>
+    <p class="last_massage">閲覧してくださった皆様<br>ありがとうございました</p>
   </div>
 </section>
-
 
 <script src="/js/topModal.js"></script>
