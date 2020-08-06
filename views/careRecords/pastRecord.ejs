@@ -31,11 +31,11 @@
 <script src="/js/listMenu.js"></script>
 
 <div class="data_form_user_search">
-<button class="record_btn" type="submit"><a href="<%=`/careRecords/recordPage/${userId}`%>">記録</a></button>
-<button class="search_btn" type="submit"><a href="<%=`/careRecords/searchPage/${userId}`%>">／　検索</a></button>
-<button class="update_btn" type="submit"><a href="<%=`/careRecords/updatePage/${userId}`%>">／　利用者情報修正</a></button>
+<button class="record_btn" type="submit"><a class="update_user_info" href="<%=`/careRecords/recordPage/${userId}`%>">記録</a></button>
+<button class="search_btn" type="submit"><a class="update_user_info" href="<%=`/careRecords/searchPage/${userId}`%>">／　検索</a></button>
+<button class="update_btn" type="submit"><a class="update_user_info" href="<%=`/careRecords/updatePage/${userId}`%>">／　利用者情報修正</a></button>
   <form action="<%=`/careRecords/recordSearch/${userId}`%>">
-    <p class="search_target">利用者名前：<%= userName%> 性別：<%= gender%> ADL：<%= adl %></p><br>
+    <p class="search_target">利用者名前：<%= userName%>　様／　性別：<%= gender%>／　ADL：<%= adl %></p><br>
 
     <input type="date" name="search_date" id="inputSearch" class="searchDate" placeholder="yyyy/mm/dd" value="" required><br>
 <button class="search_page_search_btn">検索</button>

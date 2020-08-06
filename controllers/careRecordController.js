@@ -242,8 +242,7 @@ module.exports = {
     } else {
       const userId = req.params.user_id;
       req.check('record_date')
-        .isBefore().withMessage('未来の日時は入力できません')
-        .not().isEmpty().withMessage('記録虹時は必ず入力してください');
+        .not().isEmpty().withMessage('記録日時は必ず入力してください');
       req.check('record_data')
         .not().isEmpty().withMessage('記録は必ず記入してから登録してください');
       req.getValidationResult().then(error => {

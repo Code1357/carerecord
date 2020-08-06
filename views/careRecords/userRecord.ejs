@@ -37,7 +37,7 @@
 <button class="search_btn_record_page" type="submit"><a class="update_user_info" href="<%=`/careRecords/searchPage/${userId}`%>">検索</a></button>
 <button class="update_btn" type="submit"><a class="update_user_info" href="<%=`/careRecords/updatePage/${userId}`%>">／　利用者情報修正</a></button>
   <form action="<%=`/careRecords/recordCreate/${userId}`%>" method="post">
-    <p class="record_target">利用者名前：<%= userName%> ／　性別：<%= gender%> ／　ADL：<%= adl %></p><br>
+    <p class="record_target">利用者名前：<%= userName%>　様／　性別：<%= gender%>／　ADL：<%= adl %></p><br>
 
     <input type="datetime-local" name="record_date" id="inputRecordDate" class="recorderDate" placeholder="yyyy/mm/dd hh:mm" value=""
       required><br>
