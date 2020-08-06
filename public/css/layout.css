@@ -295,6 +295,7 @@ input {
   text-align: left;
   width: 170px;
   margin-right: 0px;
+  padding: 3px;
 }
 .newConfirmation_list,
 .newUserConfirmation_list {
@@ -1068,14 +1069,11 @@ ul {
 display: flex;
 }
 
-
-
-
 .list_wrapper{
   float: left;
   width: 210px;
   height: 430px;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: 30px;
   text-align: center;
   border: 1px solid;
@@ -1207,11 +1205,16 @@ table {
   font-size: 14px;
 }
 
-.reset_btn,
 .modal_to_btn_record {
-  width: 60px;
+  width: 80px;
   float: left;
   margin: 0px;
+}
+.reset_btn_smalls{
+width: 80px;
+text-align: center;
+margin-top: 0px;
+margin-right: 0px;
 }
 .reset2{
   display: inline-block;
