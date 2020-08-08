@@ -133,6 +133,10 @@ padding-left: 30px;
   text-align: left;
   color: lightcoral;
 }
+.annotation_login_sub{
+font-size: 17px;
+color: deeppink;
+}
 .annotation_user,
 .annotation_staff {
   width: 400px;
