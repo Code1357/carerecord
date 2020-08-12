@@ -76,13 +76,37 @@ label {
   padding-left: 30px;
 }
 /* -------- リンク処理 */
-.top_menu_li,
 .start {
+  display: inline-block;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 5px;
   text-decoration: none;
   color: teal;
+  background-color: #fff100;
+  border-bottom: 5px solid #ccc100;
+  border-radius: 3px;
 }
-.top_menu_li:hover,
 .start:hover {
+  margin-top: 3px;
+  color: darkkhaki;
+  background: #ffe60a;
+  border-bottom: 4px solid #e9e36ebe;
+}
+
+.top_menu_li {
+  width: 100px;
+  text-decoration: none;
+  border: 0.2px solid;
+  border-color: rgba(85, 107, 47, 0.562);
+  color: teal;
+  background-color: rgb(250, 251, 252);
+  border-left-style: none;
+  border-right-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.top_menu_li:hover {
   color: darkkhaki;
 }
 .greeting {
@@ -393,7 +417,7 @@ small {
   display: inline-block;
 }
 .nav-title {
-  width: 220px;
+  width: 230px;
   text-align: left;
 }
 li {
@@ -412,6 +436,14 @@ ul {
   margin-bottom: 3px;
   margin-left: 5px;
   padding-left: 10px;
+}
+.care {
+  color: chocolate;
+  font-size: 20px;
+}
+.manager {
+  color: rgb(31, 162, 223);
+  font-size: 20px;
 }
 
 /* -------- リンク処理 */
@@ -700,6 +732,9 @@ table {
   }
   .start:hover {
     color: darkkhaki;
+  }
+  .start {
+    width: 140px;
   }
   .greeting {
     text-align: center;
@@ -1034,6 +1069,10 @@ table {
   .nav_list_a:hover,
   .nav_cover:hover {
     color: darkkhaki;
+  }
+  .care,
+  .manager {
+    font-size: 15px;
   }
 
   /* test listInfo.css */

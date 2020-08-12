@@ -5,7 +5,7 @@
 
 <div class="m_login">
 	<% if (loggedIn) { %>
-	<p class="staff_id">社員ID:<%= staffs.name %></p><br><small>ver.1.1.3</small>
+	<p class="staff_id">社員ID:<%= staffs.name %></p><br><small>ver.1.1.4</small>
 	<% } %>
 </div>
 
@@ -19,7 +19,7 @@
 
 		<% if (loggedIn) { %>
 		<ul class="nav2">
-			<li class="nav-title"><a class="info_title">管理者 Page - スタッフ情報</a></li>
+			<li class="nav-title"><a class="info_title"><span class="manager">管理者専用</span><br>スタッフ情報</a></li>
 			<li class="nav_new" ><a href="/managers/new" class="nav_new_a">　新規登録</a></li>
 			<li class="nav_list"><a href="/managers/staffsList" class="nav_list_a">／　リスト</a></li>
 		</ul>
