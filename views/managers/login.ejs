@@ -5,7 +5,7 @@
 
 <div class="m_data_form">
 <p class="annotation"><small class="annotation_login">
-★ デモのため自由に操作できるよう、サンプルアカウントを設定しています。<br><span class="annotation_login_sub">※CareStaffと管理者は出来る操作が違います</span><br>
+★ デモのため自由に操作できるよう、サンプルアカウントを設定しています。<br><span class="annotation_login_sub">※CareStaffと管理者は内容が違います<br>　2通りお試しください</span><br>
 　<span class="sample_span">
 ●社員番号(CareStaff):888888 ／ PASS:choko777<br>
 </span>
@@ -21,11 +21,12 @@
 </span></small></p>
   <form class="m_login_form" action="/managers/login" method="POST">
     <label for="username">社員番号</label>
-    <input type="text" class="m_form" name="username" id="username" placeholder="6桁,半角英数字"><br>
-    <label for="m_password">パスワード</label>
+    <input type="text" class="m_form form_margin" name="username" id="username" placeholder="6桁,半角英数字"><br>
+    <label for="m_password" class="form_margin">パスワード</label>
     <input type="password" class="m_form" name="password" id="m_password" placeholder="8桁〜15桁,半角英数字"><br>
     <div class="m_btn_container2">
       <button type="submit" class="m_btn">login</button>
+      <p class="annotation_login_sub m_btn" annotation_login_sub>エラー画面が表示されましたら<br>更新ボタンで再読み込みをお願いします</p>
     </div>
   </form>
 </div>

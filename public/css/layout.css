@@ -214,6 +214,9 @@ button {
 .sample_span2 {
   color: blueviolet;
 }
+.form_margin {
+  margin-top: 5px;
+}
 
 /*  -------- btn */
 .m_btn_container {
